@@ -17,7 +17,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="anime.min.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
 
 </head>
 
@@ -29,6 +29,7 @@
 
         .container {
             font-weight: bold;
+
         }
 
         .card {
@@ -54,19 +55,19 @@
     </style>
     <div class="jumbotron text-center">
         <h1 style="font-size: 3.5rem">Tenzin Jamchhen</h1>
-        <h3 class="text-info ">Graphic Designer</h3>
+        <h3 class="text-info"><span id="designer"></span></h3>
     </div>
 
     <div class="container">
         <div class="card-columns">
-            <div class="card bg-info text-white">
+            <div class="card bg-primary text-white">
                 <div class="card-body text-center ">
                     <h2 class="card-title">Shankar</h2>
                     <h6>Sn.Graphic Designer</h6>
                     <p class="card-text">Wish you all the best for your future</p>
                 </div>
             </div>
-            <div class="card bg-primary">
+            <div class="card bg-info">
                 <div class="card-body text-center  text-white">
                     <h2 class="card-title">Fayaz</h2>
                     <h6>Sn.Front end Developer</h6>
@@ -78,18 +79,15 @@
                 <div class="card-body text-center">
                     <h2 class="card-title">Shama</h2>
                     <h6>Sn.SEO Analyst</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
+                    <p class="card-text">Moving on to a new stage in life can be a challenging process. We wish you the
+                        best of luck in all of your future endeavors, you will be great.</p>
                 </div>
             </div>
             <div class="card bg-success">
                 <div class="card-body text-center text-white">
                     <h2 class="card-title">Netravati</h2>
                     <h6>Sn.SEO Analyst</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
+                    <p class="card-text">May you do well and come out with flying colors. All the best.</p>
                 </div>
             </div>
             <div class="card bg-primary">
@@ -109,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="card bg-light">
+            <div class="card bg-danger text-white">
                 <div class="card-body text-center">
                     <h2 class="card-title">Anusha </h2>
                     <h6>Jn.SEO Analyst</h6>
@@ -119,6 +117,13 @@
                         All The Best!!! May All Ur Wish Come True...Keep Smiling😊</p>
                 </div>
             </div>
+            <div class="card bg-warning">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Sasidharan</h2>
+                        <h6>Video Editor</h6>
+                        <p class="card-text">Here’s wishing you all the best for your endeavors in the coming year!</p>
+                    </div>
+                </div>
             <div class="card bg-info text-white">
                 <div class="card-body text-center">
                     <h2 class="card-title">Attaulla </h2>
@@ -128,6 +133,15 @@
             </div>
         </div>
     </div>
+    <div class="footer bg-secondary text-warning text-center py-1 rounded">
+        <h2 class="font-weight-bold">Truweight</h2>
+    </div>
+    <script>
+        window.ityped.init(document.querySelector('#designer'), {
+            strings: ['Graphic Designer']
+        })
+
+    </script>
 </body>
 
 </html>
