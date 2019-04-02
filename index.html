@@ -18,13 +18,17 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/ityped@1.0.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 </head>
 
 <body>
     <style>
         body {
-            background-color: lightgray;
+            background-image: url(https://image.freepik.com/free-vector/abstract-geometric-hexagonal-medical_1017-15002.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-color: lightgray; */
         }
 
         .container {
@@ -37,12 +41,10 @@
         }
 
         .jumbotron {
-            background-image: url(https://storage.pixteller.com/designs/designs-images/2017-07-26/09/drawing-backgrounds-cartoon-background-graphics-1-59783a36a67ed.png);
-            color: lightyellow;
+            background-color: transparent;
             font-family: ubuntu;
             font-size: 20px;
-            background-repeat: no-repeat;
-            background-size: cover;
+
         }
 
         @media only screen and (max-width: 600px) {
@@ -53,7 +55,7 @@
             }
         }
     </style>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center animated fadeInUp">
         <h1 style="font-size: 3.5rem">Tenzin Jamchhen</h1>
         <h3 class="text-info"><span id="designer"></span></h3>
     </div>
@@ -118,12 +120,12 @@
                 </div>
             </div>
             <div class="card bg-warning">
-                    <div class="card-body text-center">
-                        <h2 class="card-title">Sasidharan</h2>
-                        <h6>Video Editor</h6>
-                        <p class="card-text">Here’s wishing you all the best for your endeavors in the coming year!</p>
-                    </div>
+                <div class="card-body text-center">
+                    <h2 class="card-title">Sasidharan</h2>
+                    <h6>Video Editor</h6>
+                    <p class="card-text">Here’s wishing you all the best for your endeavors in the coming year!</p>
                 </div>
+            </div>
             <div class="card bg-info text-white">
                 <div class="card-body text-center">
                     <h2 class="card-title">Attaulla </h2>
@@ -141,6 +143,11 @@
             strings: ['Graphic Designer']
         })
 
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
